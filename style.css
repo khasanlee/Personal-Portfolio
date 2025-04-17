@@ -281,3 +281,23 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #ff004f;
 }
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    background: #262626;
+    color: #ababab;
+    font-size: 18px;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
