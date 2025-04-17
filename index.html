@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/9e4898c322.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9e4898c322.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header">
@@ -43,30 +46,40 @@
               MEsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf
             </p>
             <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents active-tab" id="skills" >
-                <ul>
-                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                    <li><span>Web Development</span><br>Web app Development</li>
-                    <li><span>App Development</span><br>Building Android/IOS apps</li>
-                </ul>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                </li>
+              </ul>
             </div>
             <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                    <li><span>Web Development</span><br>Web app Development</li>
-                    <li><span>App Development</span><br>Building Android/IOS apps</li>
-                </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                </li>
+              </ul>
             </div>
             <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                    <li><span>Web Development</span><br>Web app Development</li>
-                    <li><span>App Development</span><br>Building Android/IOS apps</li>
-                </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -106,20 +119,80 @@
           </div>
         </div>
       </div>
-    <script>
+    </div>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+    <!--------------------------PORTFOLIO----------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talentep peaople around the world.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talentep peaople around the world.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Netflix App</h3>
+              <p>
+                The app connects you to the talentep peaople around the world.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!--------------------------CONTACT----------------------------->
+
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <form action="">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
   </body>
 </html>
